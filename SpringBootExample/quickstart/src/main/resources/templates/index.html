@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息确认</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" />
+    <style>
+        p{
+            display: inline;
+        }
+        .p1{
+            font-size: 16px;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container"  style="width:1000px;height:800px" >
+    <div>
+        <img th:src="@{${student.back}}" style="width: 1000px;height: 400px;text-align: center" >
+    </div>
+        <div class="alert alert-success" >
+            <div><p>姓名：</p><p class="p1" th:text="${student.name}"></p></div>
+            <div><p>年龄：</p><p class="p1" th:text="${student.age}" ></p></div>
+            <div><p>性别：</p><p class="p1" th:text="${student.male}"></p></div>
+            <div><p>身份证号：</p><p class="p1" th:text="${student.cardId}"></p></div>
+            <div><p>学号：</p><p class="p1"  th:text="${student.studentNo}" ></p></div>
+            <div><p>籍贯：</p><p class="p1" th:text="${student.nativePlace}" ></p></div>
+            <div> <p>联系方式：</p><p class="p1" th:text="${student.contact}" ></p></div>
+            <div> <p>宿舍号：</p><p class="p1" th:text="${student.dormitoryNo}"></p></div>
+            <div> <p>毕业学校：</p><p class="p1" th:text="${student.highSchool}" ></p></div>
+            <div> <input class="p1" type="button" value="确认报到" ></div>
+        </div>
+</div>
+</body>
+</html>
