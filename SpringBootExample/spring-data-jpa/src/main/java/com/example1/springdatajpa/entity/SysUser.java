@@ -29,7 +29,7 @@ public class SysUser implements Serializable {
     private  String password;
 
     private String nickname;
-    private Integer fans;
+    private Integer fans;//dfsfrgewrgksfksdhvkhfffgfd
 
 
 }
